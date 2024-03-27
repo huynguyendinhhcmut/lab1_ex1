@@ -6,8 +6,8 @@ module D_FF
 	output logic [WIDTH-1:0] data_o
 );
 reg [WIDTH-1:0] data;
-always_ff@ (posedge clk, posedge rst)
-	if (rst) begin
+always_ff@ (posedge clk or negedge rst)
+	if (!rst) begin
 		data <= 0;
 	end else begin
 	data <= data_i;
