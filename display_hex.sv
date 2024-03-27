@@ -35,7 +35,7 @@ always @(*) begin
         4'b1101:
             display_out = 7'b0100001;  //d
         4'b1110:
-            display_out = 7'b0000011;  //E
+            display_out = 7'b0000110;  //E
         4'b1111:
             display_out = 7'b0001110;  //F
     endcase
