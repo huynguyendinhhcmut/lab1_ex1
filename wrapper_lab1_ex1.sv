@@ -5,7 +5,7 @@ module wrapper_lab1_ex1 (
 	output logic [6:0] HEX0, HEX1, HEX2, HEX3
 );
 
-assign LEDR[7:0] = SW [7:0];
+assign LEDR[7:0] = sum [7:0];
 wire [7:0] sum, A;
 assign A = SW;
 
